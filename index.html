@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velyn tailor - Fashion design</title>
+    <link rel="icon" href="fashion.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Velyn'sTailor.co</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portofolio.html">Portofolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h2>Welcome to our fashion heaven</h2>
+        <p>Discover the latest trends in women's fashion</p>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="ab1.jpeg" style="width: 80%" />
+          </div>
+          <div class="mySlides fade">
+            <img src="ab2.jpeg" style="width: 80%" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="penjelasan">
+      <div class="container">
+        <img src="velyn.jpg" alt="Velyn's Photo" class="foto-velyn" />
+        <h2>Who is Velyn?</h2>
+        <p>
+          Seorang mahasiswi informatika yang memiliki ketertarikan dalam bidang
+          fashion design. Berharap suatu hari karyanya dapat dipajang di Paris
+          Fashion Week. <br />
+          Berawal dari gemar melukis sketsa anatomi tubuh manusia, yang akhirnya
+          menemukan minat dalam hal desain fashion. <br />
+          <br />
+          "Stars can't shine without darkness" - Velyn
+        </p>
+      </div>
+    </section>
+
+    <section class="section2">
+      <div class="container">
+        <img src="pattern.jpeg" alt="Dress pattern Photo" class="foto_velyn" />
+        <h2>What is Velyn's Tailor?</h2>
+        <p>
+          Velyn'sTailor, Perusahaan yang bergerak di bidang fashion design,
+          memiliki hampir 100 cabang di indonesia dan dunia. <br />
+          Membantu mewujudkan pakaian impian setiap wanita di seluruh dunia,
+          dengan fashion consultant profesional yang akan membantu
+          merealisasikan setiap keinginan. <br />
+          <br />
+          "Aku suka fashion dan begitulah caraku untuk mengekspresikan diri" -
+          Victoria Beckham
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Velyn'sTailor.co. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+    </script>
+  </body>
+</html>
